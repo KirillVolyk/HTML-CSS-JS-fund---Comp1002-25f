@@ -15,16 +15,11 @@
 			<h1>HTML, CSS, and JS Fundamentals</h1>
 			<h2>Building Blocks for Web Developers</h2>
 			<!-- Global site navigation -->
-			<nav>
-				<ul>
-<!-- STEP 5a: We are now marooned on this page with no way back to the home page except the 'Back' button - build an LI and an A element above pointing back to the index.php page -->
-					<li><a href = "index.php" title = "Go to home page">Home</a></li>
-					<li><a href = "red.php">Red blocks</a></li>
-					<li><a href = "blue.php">Blue blocks</a></li>
-					<li><a href = "yellow.php">Yellow blocks</a></li>
-<!-- STEP 5b: Upload this changed file, and try it in the browser - then go back to index.php for STEP 6 -->
-				</ul>
-			</nav>
+			<?php
+				// grab cite navigation from nav.php file
+				include("includes/nav.php");
+			?>
+			
 		</header>
 		<!-- Page-level main content -->
 		<main>
