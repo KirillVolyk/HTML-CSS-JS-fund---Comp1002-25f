@@ -22,6 +22,7 @@
                 
                     <div class="image-block">
                         <img src="images/doughjo-removebg-preview.png" alt="Doughjo Pizza Mascot" width=700 height=700/>
+                        <!-- made by copilot using openai image generation -->
                     </div>
                 </div>
                 <div class="right">

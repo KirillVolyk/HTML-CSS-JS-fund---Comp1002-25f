@@ -1,4 +1,4 @@
-/* a lot of help from https://www.youtube.com/watch?v=wsTv9y931o8 */
+/* a lot of help from https://www.youtube.com/watch?v=wsTv9y931o8 and https://www.youtube.com/watch?v=phWxA89Dy94&t=65s these guys are awesome, helped me with flexboxes and make the website look nicer*/
 
 html{
     background-color:navajowhite;
@@ -7,6 +7,14 @@ html{
 html, body {
     margin: 0;
     padding: 0;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header h2 {
+    font-size: 35px;
 }
 
 #navbar ul {
@@ -34,7 +42,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 /* hover effect */
@@ -122,7 +130,7 @@ label {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-select{
+select {
   padding: 10px;
   border: 2px solid #d35400;
   background-color: #fff8f0;
@@ -149,9 +157,11 @@ input[type="submit"]:hover , input[type="reset"]:hover {
   transform: scale(1.05);
 }
 
-.fanfavorite-images {
+#fanfavorite-images {
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 50px;
+  justify-content: center;
 }
+
