@@ -38,6 +38,16 @@
                     echo('<p>Your order was: '.$fanfavorite.' </p>');
                 ?>
                 <h3>Everything that you ordered has been sent to our chefs!</h3>
+                <h3>Your Information:</h3>
+                <?php
+                    // Capture the value of the emailAddress INPUT from the index.php page by defining a PHP variable called '$emailAddress' and setting the value to the email address as entered by the user in the FORM on index.php
+                    $email = $_GET['email-address'];
+                    $phone = $_GET['phone-number'];
+                    $name = $_GET['full-name'];
+                    $address = $_GET['street-address'];
+                    // Use the PHP function, echo() to create an HTML paragraph element that confirms the user's email address -->
+                    echo('<p>Your email: '.$email.'. Your phone number '.$phone.'. Your full name '.$name.'. Your address '.$address.'. </p>');
+                ?>
 			</section>
             <img src="images/doughjo-removebg-preview.png" alt="Doughjo Pizza Mascot" width=700 height=700/>
         </main>

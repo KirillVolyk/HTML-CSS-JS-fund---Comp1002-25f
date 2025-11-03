@@ -21,6 +21,7 @@
                     <legend>Make Your Pizza</legend>
                         <label for="pizza-counter">Number of Pizza:</label>
                             <select id="pizza-count" name="pizza-count" required>
+                                <option value="0,">0</option>
                                 <option value="1,">1</option>
                                 <option value="2,">2</option>
                                 <option value="3,">3</option>
@@ -29,18 +30,21 @@
                             </select>
                         <label for="pizza-size">Choose Size:</label>
                             <select id="size" name="size" required>
+                                <option value="nothing">Nothing</option>
                                 <option value="small with">Small</option>
                                 <option value="medium with">Medium</option>
                                 <option value="large with">Large</option>
                             </select>
                         <label for="crust-type">Choose Crust Type:</label>
                             <select id="crust" name="crust" required>
+                                <option value="nothing">Nothing</option>
                                 <option value="thin crust, and ">Thin Crust</option>
                                 <option value="thick crust, and ">Thick Crust</option>
                                 <option value="stuffed crust, and ">Stuffed Crust</option>
                             </select>
                         <label for="shape-type">Choose Shape:</label>
                             <select id="shape" name="shape" required>
+                                <option value="nothing">Nothing</option>
                                 <option value="round shaped">Round</option>
                                 <option value="square shaped">Square</option>
                                 <option value="heart shaped">Heart</option>
@@ -60,6 +64,7 @@
                     <label for="bacon"> Bacon</label><br /><br />
                     <label for="cheese-type">Choose Cheese:</label>
                             <select id="cheese" name="cheese" required>
+                                <option value="nothing">Nothing</option>
                                 <option value="no-cheese pizza">No Cheese</option>
                                 <option value="cheese pizza">Cheese</option>
                                 <option value="extra-cheese pizza">Extra Cheese</option>
@@ -71,12 +76,12 @@
                     <br />
                     <br />
                 </fieldset>
-            </form>
-            <form action="process-form.php" method="get"> <!-- fan favorite pizza order form -->
+            <!-- fan favorite pizza order form -->
                 <fieldset id="fan-favorite-pizza">
                     <legend>Order a Fan Favourite!</legend>
                         <label for="fan-favorites">Choose a Fan Favourite:</label>
                             <select id="fan-favorite" name="fan-favorite" required>
+                                <option value="no pizza">No Pizza</option>
                                 <option value="pepperoni pizza">Pepperoni Pizza</option>
                                 <option value="four-cheese pizza">Four Cheese Pizza</option>
                                 <option value="meat-lover pizza">Meat Lover Pizza</option>
@@ -103,6 +108,24 @@
                     <br />
                         <input type="reset" value="Reset" />
                         <input type="submit" value="Place Order" />
+                    <br />
+                    <br />
+                </fieldset>
+            <!-- user email and phone number and name form -->
+                <fieldset id="user-info">
+                    <legend>Your Information</legend>
+                        <label for="emailAddress">Email Address:</label>
+                            <input type="email" id="email-address" name="email-address" required />
+                        <label for="phoneNumber">Phone Number:</label>
+                            <input type="tel" id="phone-number" name="phone-number" required />
+                        <label for="fullName">Full Name:</label>
+                            <input type="text" id="full-name" name="full-name" required />
+                        <label for="streetAddress">Street Address:</label>
+                            <input type="text" id="street-address" name="street-address" required />
+                    <br />
+                    <br />
+                        <input type="reset" value="Reset" />
+                        <input type="submit" value="Submit Info" />
                     <br />
                     <br />
                 </fieldset>
