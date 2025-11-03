@@ -1,0 +1,56 @@
+/* a lot of help from https://www.youtube.com/watch?v=wsTv9y931o8 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #d35400; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Style each list item */
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+/* Style the links */
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+/* hover effect */
+nav ul li a:hover {
+    background-color: #e67e22;
+}
+
+/* add some padding to the body to prevent content from being hidden behind the fixed nav */
+body {
+    padding-top: 60px;
+}
+
+header {
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
