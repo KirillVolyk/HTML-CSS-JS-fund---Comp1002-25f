@@ -9,7 +9,7 @@ html, body {
     padding: 0;
 }
 
-nav ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -20,24 +20,25 @@ nav ul {
     width: 100%;
 }
 
-/* Style each list item */
-nav ul li {
+/* style each list item */
+#navbar ul li {
     flex: 1;
     text-align: center;
 }
 
-/* Style the links */
-nav ul li a {
-    display: block;
+/* style the links */
+#navbar ul li a {
+    display: flex;
     padding: 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Arial', sans-serif;
+    justify-content: center;
 }
 
 /* hover effect */
-nav ul li a:hover {
+#navbar ul li a:hover {
     background-color: #e67e22;
 }
 
@@ -77,16 +78,24 @@ border: 10px dashed brown;
   border: 10px dashed brown;
 }
 
+/* center text for the image block */
 .image-block {
   text-align: center;
 }
 
+/* customize the img for the imgae block*/
 .image-block img {
-  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
+/* when hovering on the img(right) make it 5% bigger in .3 seconds */
+.right .image-block img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* center everything in main */
 main {
     text-align: center;
 }
