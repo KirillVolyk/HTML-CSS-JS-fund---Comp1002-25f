@@ -1,0 +1,167 @@
+/* a lot of help from https://www.youtube.com/watch?v=wsTv9y931o8 and https://www.youtube.com/watch?v=phWxA89Dy94&t=65s these guys are awesome, helped me with flexboxes and make the website look nicer*/
+
+html{
+    background-color:navajowhite;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header h2 {
+    font-size: 35px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #d35400; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* style each list item */
+#navbar ul li {
+    flex: 1;
+    text-align: center;
+}
+
+/* style the links */
+#navbar ul li a {
+    display: flex;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    justify-content: space-around;
+}
+
+/* hover effect */
+#navbar ul li a:hover {
+    background-color: #e67e22;
+}
+
+/* add some padding to the body to prevent content from being hidden behind the fixed nav */
+body {
+    padding-top: 60px;
+}
+
+header {
+    background-color: #f39c12;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* container is as a whole the left and the right side of the index page */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* left side*/
+.left {
+  flex: 1;
+  padding: 10px;
+  border: 10px dashed brown;
+}
+
+/* right side*/
+.right {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between the column */
+  border: 10px dashed brown;
+}
+
+/* center text for the image block */
+.image-block {
+  text-align: center;
+}
+
+/* customize the img for the imgae block*/
+.image-block img {
+  height: auto;
+}
+
+/* when hovering on the img(right) make it 5% bigger */
+.right .image-block img:hover {
+  transform: scale(1.05);
+}
+
+/* center everything in main */
+main {
+    text-align: center;
+}
+
+
+/* for order/form */
+fieldset {
+  border: 3px solid #d35400; 
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff8f0;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 25px;
+  color: #d35400;
+  padding: 10px;
+  background-color: #fff8f0;
+  border: 2px solid #d35400;
+}
+
+label {
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+select {
+  padding: 10px;
+  border: 2px solid #d35400;
+  background-color: #fff8f0;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+select:hover {
+  border-color: #e67e22;
+}
+
+input[type="submit"] , input[type="reset"] {
+  background-color: #d35400; 
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+input[type="submit"]:hover , input[type="reset"]:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+#fanfavorite-images {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+}
+

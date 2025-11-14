@@ -20,7 +20,7 @@
 				<h3>Thank You for Subscribing</h3>
 <?php
 // Capture the value of the emailAddress INPUT from the index.php page by defining a PHP variable called '$emailAddress' and setting the value to the email address as entered by the user in the FORM on index.php
-	$emailAddress = $_GET['emailAddress'];
+	$fanfavorites = $_GET['fan-favorites'];
 // Use the PHP function, echo() to create an HTML paragraph element that confirms the user's email address -->
 	echo('<p>Your email address, '.$emailAddress.' has been added to our list of subscribers.</p>');
 ?>
