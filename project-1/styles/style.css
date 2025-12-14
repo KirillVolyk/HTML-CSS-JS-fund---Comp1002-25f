@@ -66,6 +66,8 @@ html {
 /* on hover change color */
 #navigationBar ul li a:hover {
     background-color: #E0A370;
+    /* on hover state size transition */
+    transform: scale(1.15);
 }
 
 /* end navigationBar */
@@ -141,6 +143,8 @@ footer {
 /* on hover change color */
 #imageGallery li a:hover {
     color: #567D89;
+    /* on hover state size transition */
+    transform: scale(1.15);
 }
 
 /* end the imageGallery link bar */
@@ -193,47 +197,88 @@ footer {
     margin: 0 auto;
 }
 
-.name, .price {
+.name,
+.price {
     margin: 10px 0;
     font-weight: bold;
 }
 
 .add-btn {
-  margin-top: 10px;
-  padding: 5px 10px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: #A16B56;
+    background-color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .add-btn:hover {
-  background-color: lightgrey;
+    color: white;
+    background-color: #A16B56;
+    /* on hover state size transition */
+    transform: scale(1.15);
 }
 
 .add-btn.selected {
-  background-color: lightgreen; /* on state */
-  color: white;
+    background-color: lightgreen;
+    /* on state */
+    color: #A16B56;
 }
 
 #checkout {
-  display: block;
-  font-family: 'Oldschool';
-  border-width: 5px;
-  border-color: #A16B56;
-  margin: 20px auto;
-  padding: 10px 20px;
+    display: block;
+    font-family: 'Oldschool';
+    border-width: 5px;
+    border-color: #A16B56;
+    background-color: #DEC584;
+    margin: 20px auto;
+    padding: 10px 20px;
 }
 
 #checkout:hover {
-  background-color: #E0A370;
-  color: white;
+    background-color: #A16B56;
+    color: white;
+    /* on hover state size transition */
+    transform: scale(1.15);
 }
 
 #reviewsSection {
     text-align: left;
     padding: 1rem;
-    background-color: #DEC584;
+    background-color: #A16B56;
     border-style: dashed;
-    border-color: #A16B56;
+    border-color: #DEC584;
     margin-bottom: 2rem;
+}
+
+#reviewsSection .review {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 5px solid #E2D7A7;
+    background-color: #DEC584;
+}
+
+#feedback {
+    width: 80%;
+    height: 100px;
+    font-family: 'Oldschool';
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background-color: #DEC584;
+}
+
+#feedbackForm button {
+    font-family: 'Oldschool';
+    border-width: 5px;
+    border-color: #A16B56;
+    background-color: #DEC584;
+    padding: 10px 20px;
+}
+
+#feedbackForm button:hover {
+    background-color: #A16B56;
+    color: white;
+    /* on hover state size transition */
+    transform: scale(1.15);
+
 }
