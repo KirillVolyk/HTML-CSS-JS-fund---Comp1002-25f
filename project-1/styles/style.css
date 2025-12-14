@@ -25,6 +25,7 @@
     font-style: normal;
 }
 
+/* set the overall html font and background color */
 html {
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,6 +82,7 @@ h1 {
     background-color: #DEC584;
 }
 
+/* the little description after tittle on index */
 #textHook {
     margin-top: -40px;
     margin-bottom: 50px;
@@ -149,6 +151,7 @@ footer {
 
 /* end the imageGallery link bar */
 
+/* the company info section in the middle */
 #companyInfo {
     text-align: center;
     margin-left: 25%;
@@ -163,18 +166,21 @@ footer {
     border-color: #A16B56;
 }
 
+/* the left image of the company info section */
 #companyLeftImage {
     position: absolute;
     left: 20px;
     top: 320px;
 }
 
+/* the right image of the company info section */
 #companyRightImage {
     position: absolute;
     left: 1315px;
     top: 320px;
 }
 
+/* big product group container for 3 products*/
 .productGroup {
     display: flex;
     justify-content: center;
@@ -182,6 +188,7 @@ footer {
     margin-bottom: 20px;
 }
 
+/* each section within the big product group */
 .product {
     text-align: center;
     width: 200px;
@@ -190,6 +197,7 @@ footer {
     background-color: #DEC584;
 }
 
+/* images on the promotion page */
 .product img {
     max-width: 100%;
     height: auto;
@@ -197,12 +205,14 @@ footer {
     margin: 0 auto;
 }
 
+/* name and price classes for the promotion page */
 .name,
 .price {
     margin: 10px 0;
     font-weight: bold;
 }
 
+/* the "+" button */
 .add-btn {
     margin-top: 10px;
     padding: 5px 10px;
@@ -212,6 +222,7 @@ footer {
     cursor: pointer;
 }
 
+/* the "+" button on hover */
 .add-btn:hover {
     color: white;
     background-color: #A16B56;
@@ -219,12 +230,14 @@ footer {
     transform: scale(1.15);
 }
 
+/* the "+" button when selected */
 .add-btn.selected {
     background-color: lightgreen;
     /* on state */
     color: #A16B56;
 }
 
+/* the checkout button */
 #checkout {
     display: block;
     font-family: 'Oldschool';
@@ -235,6 +248,7 @@ footer {
     padding: 10px 20px;
 }
 
+/* the checkout button when hovered */
 #checkout:hover {
     background-color: #A16B56;
     color: white;
@@ -242,6 +256,7 @@ footer {
     transform: scale(1.15);
 }
 
+/* the review section on the left in the reviews page */
 #reviewsSection {
     text-align: left;
     padding: 1rem;
@@ -251,6 +266,7 @@ footer {
     margin-bottom: 2rem;
 }
 
+/* the individual reviews within the review section */
 #reviewsSection .review {
     margin-bottom: 1.5rem;
     padding: 1rem;
@@ -258,6 +274,7 @@ footer {
     background-color: #DEC584;
 }
 
+/* the text area for the feedback form */
 #feedback {
     width: 80%;
     height: 100px;
@@ -267,6 +284,7 @@ footer {
     background-color: #DEC584;
 }
 
+/* the feedback submit button */
 #feedbackForm button {
     font-family: 'Oldschool';
     border-width: 5px;
@@ -275,6 +293,7 @@ footer {
     padding: 10px 20px;
 }
 
+/* the feedback submit button on hover */
 #feedbackForm button:hover {
     background-color: #A16B56;
     color: white;
