@@ -301,3 +301,14 @@ footer {
     transform: scale(1.15);
 
 }
+
+/* give show feedback on the userfeedback page styles */
+#showFeedback {
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding: 20px;
+    background-color: #A16B56;
+    border-style: dashed;
+    border-color: #DEC584;
+}
