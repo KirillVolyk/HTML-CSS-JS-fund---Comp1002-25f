@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html> <!--page: support/how to use -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>TDK-SA-C90: How To?</title>
+    <meta name="author" content="Kirill Volyk">
+    <meta name="description" content="See, Learn, Buy the vintage Cassette TDK-SA-C90">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css" />
+    <script src="../scripts/cashout.js" defer></script>
+    // This script could be used for additional checkout functionality if needed
+</head>
+
+<body>
+    <header>
+        <h1>Your Checkout</h1>
+        <div id="items"></div>
+        <p id="total"></p>
+        <!-- this was made with help from the video, and searching how to do this type of stuff online https://www.youtube.com/watch?v=b_xI0HDw-RQ . I am not sure if we're allowed to use these resources but I had no idea how to do this otherwise -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // get items from local storage
+                const items = JSON.parse(localStorage.getItem("checkoutItems")) || [];
+                let total = 0;
+
+                // display items
+                const itemsDiv = document.getElementById("items");
+                items.forEach(item => {
+                    const p = document.createElement("p");
+                    p.textContent = `${item.name} - $${item.price}`;
+                    itemsDiv.appendChild(p);
+                    total += item.price;
+                });
+                //output the total price
+                document.getElementById("total").textContent = "Total: $" + total.toFixed(2);
+            });
+        </script>
+
+        <nav id="navigationBar">
+            <ul>
+                <li><a href="index.html" title="Go to the Home page">Home</a></li>
+                <li><a href="corporate.html" title="Learn about corporate">Corporate Info</a></li>
+                <li><a href="promotion.html" title="Check the promotion!">Promotion</a></li>
+                <li><a href="support.html" title="Learn how to use SA-C90">Support</a></li>
+                <li><a href="reviews.html" title="Check the recent reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p><small>&copy; 2025 Kirill Volyk</small></p>
+    </footer>
+</body>
+
+</html>
