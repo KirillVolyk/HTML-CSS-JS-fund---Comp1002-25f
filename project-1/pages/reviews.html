@@ -13,7 +13,7 @@
 <body>
     <header>
         <h1>TDK-SA-C90 || Reviews</h1>
-        <nav id="navigationBar">
+        <nav id="navigationBar"> <!-- inline navigation bar for all pages -->
             <ul>
                 <li><a href="index.html" title="Go to the Home page">Home</a></li>
                 <li><a href="corporate.html" title="Learn about corporate">Corporate Info</a></li>
@@ -24,28 +24,48 @@
         </nav>
     </header>
     <main>
-        <div id="reviewsSection">
-            <div class="review">
+        <div id="reviewsSection"> <!-- section for reviews -->
+            <div class="review"> <!-- each review -->
                 <h2>A Retro Gem!</h2>
-                <p>"I recently purchased the TDK-SA-C90 cassette tape and I must say, it's a fantastic throwback to the days of analog music. The sound quality is surprisingly good for a cassette, with warm tones that digital formats just can't replicate. It's perfect for my vintage Walkman collection!"</p>
+                <p>"I recently purchased the TDK-SA-C90 cassette tape and I must say, it's a fantastic throwback to the
+                    days of analog music. The sound quality is surprisingly good for a cassette, with warm tones that
+                    digital formats just can't replicate. It's perfect for my vintage Walkman collection!"</p>
                 <p>- Alex M.</p>
             </div>
-            <div class="review">
+            <div class="review"> <!-- each review -->
                 <h2>Great for Collectors</h2>
-                <p>"As a collector of vintage audio equipment, the TDK-SA-C90 is a must-have. The build quality is solid, and it has that classic TDK reliability. I've used it for recording mixtapes, and it holds up well over time. Highly recommended for anyone into retro audio."</p>
+                <p>"As a collector of vintage audio equipment, the TDK-SA-C90 is a must-have. The build quality is
+                    solid, and it has that classic TDK reliability. I've used it for recording mixtapes, and it holds up
+                    well over time. Highly recommended for anyone into retro audio."</p>
                 <p>- Samantha L.</p>
             </div>
-            <div class="review">
+            <div class="review"> <!-- each review -->
                 <h2>Nostalgia at its Best</h2>
-                <p>"Using the TDK-SA-C90 takes me back to my teenage years. The tactile experience of handling cassettes, the sound of the tape whirring, it's all so nostalgic. The audio quality is decent, and it's fun to create mixtapes again. A great product for those who appreciate the analog era."</p>
+                <p>"Using the TDK-SA-C90 takes me back to my teenage years. The tactile experience of handling
+                    cassettes, the sound of the tape whirring, it's all so nostalgic. The audio quality is decent, and
+                    it's fun to create mixtapes again. A great product for those who appreciate the analog era."</p>
                 <p>- David R.</p>
             </div>
-            <div class="review">
+            <div class="review"> <!-- each review -->
                 <h2>Nowadays this is not worth it!</h2>
-                <p>"Personally I find this product mid! Spotify is better! But, it does work, but sounds wack! Use Spotify, and not this."</p>
+                <p>"Personally I find this product mid! Spotify is better! But, it does work, but sounds wack! Use
+                    Spotify, and not this."</p>
                 <p>- Kyle. K.</p>
             </div>
         </div>
+
+        <form id="feedbackForm"> <!-- form for user feedback -->
+            <textarea id="feedback" name="feedback"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <script> // this was also made with help of online resources, not all but some
+            document.getElementById("feedbackForm").addEventListener("submit", function (e) {
+                e.preventDefault(); // stop normal form submission
+                const feedback = document.getElementById("feedback").value;
+                localStorage.setItem("userFeedback", feedback);
+                window.location.href = "userfeedback.html";
+            });
+        </script>
     </main>
     <footer>
         <p><small>&copy; 2025 Kirill Volyk</small></p>
